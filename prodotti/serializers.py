@@ -10,3 +10,4 @@ class ProdottoScansionatoSerializer(serializers.ModelSerializer):
     class Meta:
         model = ProdottoScansionato
         fields = '__all__'
+        read_only_fields = ['utente', 'data_scansione']
