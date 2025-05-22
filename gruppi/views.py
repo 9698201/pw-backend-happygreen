@@ -13,7 +13,8 @@ class GruppoViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
 
     def perform_create(self, serializer):
-        serializer.save(creatore=self.request.user)
+        gruppo = serializer.save(creatore=self.request.user)
+        UtenteGruppo.objects.create(gruppo=gruppo, utente=self.request.user)
 
     @action(detail=True, methods=['post'], permission_classes=[permissions.IsAuthenticated])
     def iscriviti(self, request, pk=None):
@@ -29,6 +30,6 @@ class GruppoViewSet(viewsets.ModelViewSet):
 
     @action(detail=False, methods=['get'], permission_classes=[permissions.IsAuthenticated])
     def miei_gruppi(self, request):
-        gruppi = Gruppo.objects.filter(utentigruppo__utente=request.user)
+        gruppi = Gruppo.objects.filter(utentegruppo__utente=request.user)
         serializer = GruppoSerializer(gruppi, many=True)
         return Response(serializer.data)

@@ -5,7 +5,7 @@ from gruppi.models import Gruppo
 class Post(models.Model):
     gruppo = models.ForeignKey(Gruppo, on_delete=models.CASCADE, related_name='posts')
     autore = models.ForeignKey(Utente, on_delete=models.CASCADE, related_name='posts')
-    immagine = models.ImageField(upload_to='post_images/')
+    immagine = models.ImageField(upload_to='post_images/', blank=True, null=True)
     riconoscimento = models.CharField(max_length=100)
     descrizione = models.TextField()
     latitudine = models.FloatField()
