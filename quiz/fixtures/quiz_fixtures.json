@@ -1,0 +1,334 @@
+[
+  {
+    "model": "quiz.quiz",
+    "pk": 1,
+    "fields": {
+      "titolo": "Quiz Ambiente e Sostenibilità",
+      "descrizione": "Testa le tue conoscenze sull'ambiente e la sostenibilità"
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 2,
+    "fields": {
+      "titolo": "Quiz Riciclaggio",
+      "descrizione": "Quanto ne sai sul riciclaggio e la gestione dei rifiuti?"
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 3,
+    "fields": {
+      "titolo": "Quiz Energia Rinnovabile",
+      "descrizione": "Scopri quanto conosci le energie rinnovabili"
+    }
+  },
+  {
+    "model": "quiz.domanda",
+    "pk": 1,
+    "fields": {
+      "quiz": 1,
+      "testo": "Quale di questi materiali impiega più tempo a decomporsi nell'ambiente?"
+    }
+  },
+  {
+    "model": "quiz.domanda",
+    "pk": 2,
+    "fields": {
+      "quiz": 1,
+      "testo": "Cos'è l'effetto serra?"
+    }
+  },
+  {
+    "model": "quiz.domanda",
+    "pk": 3,
+    "fields": {
+      "quiz": 1,
+      "testo": "Quale percentuale di acqua dolce è disponibile per l'uso umano?"
+    }
+  },
+  {
+    "model": "quiz.domanda",
+    "pk": 4,
+    "fields": {
+      "quiz": 2,
+      "testo": "Quale di questi materiali NON è riciclabile?"
+    }
+  },
+  {
+    "model": "quiz.domanda",
+    "pk": 5,
+    "fields": {
+      "quiz": 2,
+      "testo": "In quale contenitore va gettata la carta?"
+    }
+  },
+  {
+    "model": "quiz.domanda",
+    "pk": 6,
+    "fields": {
+      "quiz": 3,
+      "testo": "Quale fonte di energia rinnovabile è più utilizzata al mondo?"
+    }
+  },
+  {
+    "model": "quiz.domanda",
+    "pk": 7,
+    "fields": {
+      "quiz": 3,
+      "testo": "I pannelli solari funzionano solo con la luce diretta del sole?"
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 1,
+    "fields": {
+      "domanda": 1,
+      "testo": "Plastica",
+      "corretta": true
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 2,
+    "fields": {
+      "domanda": 1,
+      "testo": "Carta",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 3,
+    "fields": {
+      "domanda": 1,
+      "testo": "Vetro",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 4,
+    "fields": {
+      "domanda": 1,
+      "testo": "Alluminio",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 5,
+    "fields": {
+      "domanda": 2,
+      "testo": "Un fenomeno naturale che intrappola il calore nell'atmosfera",
+      "corretta": true
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 6,
+    "fields": {
+      "domanda": 2,
+      "testo": "Una serra per coltivare piante",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 7,
+    "fields": {
+      "domanda": 2,
+      "testo": "Un tipo di inquinamento dell'aria",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 8,
+    "fields": {
+      "domanda": 2,
+      "testo": "Un metodo per produrre energia",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 9,
+    "fields": {
+      "domanda": 3,
+      "testo": "Meno dell'1%",
+      "corretta": true
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 10,
+    "fields": {
+      "domanda": 3,
+      "testo": "Circa il 10%",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 11,
+    "fields": {
+      "domanda": 3,
+      "testo": "Circa il 25%",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 12,
+    "fields": {
+      "domanda": 3,
+      "testo": "Circa il 50%",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 13,
+    "fields": {
+      "domanda": 4,
+      "testo": "Ceramica",
+      "corretta": true
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 14,
+    "fields": {
+      "domanda": 4,
+      "testo": "Vetro",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 15,
+    "fields": {
+      "domanda": 4,
+      "testo": "Plastica",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 16,
+    "fields": {
+      "domanda": 4,
+      "testo": "Alluminio",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 17,
+    "fields": {
+      "domanda": 5,
+      "testo": "Contenitore blu/bianco",
+      "corretta": true
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 18,
+    "fields": {
+      "domanda": 5,
+      "testo": "Contenitore giallo",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 19,
+    "fields": {
+      "domanda": 5,
+      "testo": "Contenitore verde",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 20,
+    "fields": {
+      "domanda": 5,
+      "testo": "Contenitore grigio",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 21,
+    "fields": {
+      "domanda": 6,
+      "testo": "Energia idroelettrica",
+      "corretta": true
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 22,
+    "fields": {
+      "domanda": 6,
+      "testo": "Energia solare",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 23,
+    "fields": {
+      "domanda": 6,
+      "testo": "Energia eolica",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 24,
+    "fields": {
+      "domanda": 6,
+      "testo": "Energia geotermica",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 25,
+    "fields": {
+      "domanda": 7,
+      "testo": "No, funzionano anche con luce diffusa",
+      "corretta": true
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 26,
+    "fields": {
+      "domanda": 7,
+      "testo": "Sì, hanno bisogno di sole diretto",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 27,
+    "fields": {
+      "domanda": 7,
+      "testo": "Funzionano solo di notte",
+      "corretta": false
+    }
+  },
+  {
+    "model": "quiz.risposta",
+    "pk": 28,
+    "fields": {
+      "domanda": 7,
+      "testo": "Funzionano solo in estate",
+      "corretta": false
+    }
+  }
+]
