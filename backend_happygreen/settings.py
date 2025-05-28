@@ -97,8 +97,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'pwhappygreen_db',
         'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
+        'PASSWORD': 'rootroot',
+        'HOST': 'db',
         'PORT': '3306',
     }
 }
